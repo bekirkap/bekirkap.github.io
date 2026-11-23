@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İzmir'de Yeşil Alan Sorunu</title>
+  <style>
+    :root {
+      --bg: #f6f8f3; --card: #fff; --fg: #1d2a1f; --muted: #5c6b5f;
+      --green: #2f7d4f; --green-soft: #e3f0e6; --line: #dde5dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101612; --card: #18211a; --fg: #eaf2ea; --muted: #9fb0a2;
+        --green: #5cc183; --green-soft: #1d2f23; --line: #26352a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+    header { padding: 64px 0 40px; }
+    .tag {
+      display: inline-block; background: var(--green-soft); color: var(--green);
+      padding: 4px 12px; border-radius: 999px; font-size: .85rem; font-weight: 600;
+    }
+    h1 { font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.15; margin: 16px 0; }
+    .lead { color: var(--muted); font-size: 1.1rem; max-width: 640px; margin: 0; }
+    section { padding: 32px 0; }
+    h2 { font-size: 1.5rem; margin: 0 0 16px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 14px; padding: 20px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.05rem; color: var(--green); }
+    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+    ul { padding-left: 20px; color: var(--muted); }
+    li { margin-bottom: 8px; }
+    .note {
+      background: var(--green-soft); border-radius: 14px; padding: 20px;
+      color: var(--fg);
+    }
+    footer { padding: 32px 0 48px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); margin-top: 24px; }
+    a { color: var(--green); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="tag">İzmir · Kentsel Çevre</span>
+      <h1>İzmir'de yeşil alan sorunu</h1>
+      <p class="lead">
+        Hızlı kentleşme, yapılaşma baskısı ve iklim değişikliği; kentin parklarını,
+        ormanlık alanlarını ve kıyı şeridini birlikte tehdit ediyor.
+      </p>
+    </header>
+
+    <section>
+      <h2>Sorun nedir?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Yapılaşma baskısı</h3>
+          <p>Yeni konut ve yol projeleri, tarım ve orman alanlarının kent merkezine yakın kısımlarını daraltıyor.</p>
+        </div>
+        <div class="card">
+          <h3>Eşitsiz dağılım</h3>
+          <p>Yeşil alanlar ilçeler arasında dengeli dağılmıyor; bazı mahallelerde en yakın park yürüme mesafesinin dışında kalıyor.</p>
+        </div>
+        <div class="card">
+          <h3>Orman yangınları</h3>
+          <p>Kurak ve sıcak yazlar, çevre ormanlardaki yangın riskini artırıp kentin akciğerlerini zayıflatıyor.</p>
+        </div>
+        <div class="card">
+          <h3>Isı adası etkisi</h3>
+          <p>Betonlaşan bölgelerde yaz sıcakları belirgin şekilde yükseliyor, yaşam kalitesi düşüyor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Neden önemli?</h2>
+      <ul>
+        <li>Yeşil alanlar havayı temizler ve kenti serinletir.</li>
+        <li>Fiziksel ve ruhsal sağlığı destekler, sosyal buluşma alanı sağlar.</li>
+        <li>Yağmur suyunu emerek sel riskini azaltır.</li>
+        <li>Biyoçeşitliliği ve kuşların, böceklerin yaşam alanını korur.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Neler yapılabilir?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Planlama</h3>
+          <p>Kişi başına yeşil alan hedefi koymak ve imar planlarında korumak.</p>
+        </div>
+        <div class="card">
+          <h3>Mahalle parkları</h3>
+          <p>Küçük cep parkları ve yeşil koridorlarla her mahalleye erişim sağlamak.</p>
+        </div>
+        <div class="card">
+          <h3>Yeşil çatılar</h3>
+          <p>Binalarda yeşil çatı ve cepheyi teşvik ederek betonu dengelemek.</p>
+        </div>
+        <div class="card">
+          <h3>Katılım</h3>
+          <p>Mahalle sakinlerinin karar süreçlerine ve ağaçlandırmaya dahil olması.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="note">
+        <strong>Not:</strong> Bu sayfa şimdilik taslaktır. Veriler, harita ve kaynaklar yakında eklenecek.
+      </div>
+    </section>
+
+    <footer>
+      <a href="../">← Ana sayfaya dön</a>
+    </footer>
+  </div>
+</body>
+</html>
